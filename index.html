@@ -1,4 +1,3 @@
-<!-- GIT practice -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,69 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./style.css" />
-    <link
-    href=https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
-    rel="stylesheet">
-    <title>The Web framework for perfectionists with deadlines | Django</title>
+    <link rel="stylesheet" href="./normalize.css" />
+    <title>React – A JavaScript library for building user interfaces</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <h1 class="logo">
-          <img
-            src="https://static.djangoproject.com/img/logo-django.42234b631760.svg"
-            alt="Django"
-          />
-        </h1>
-        <nav class="nav">
+          <nav class="nav">
           <ul class="list">
-            <li class="list-item"><a href="#">Overview</a></li>
-            <li class="list-item"><a href="#">Download</a></li>
-            <li class="list-item"><a href="#">Documentation</a></li>
-            <li class="list-item"><a href="#">News</a></li>
+            <li class="list-item"><a href="#">Docs</a></li>
+            <li class="list-item"><a href="#">Tutorial</a></li>
+            <li class="list-item"><a href="#">Blog</a></li>
             <li class="list-item"><a href="#">Community</a></li>
-            <li class="list-item"><a href="#">Code</a></li>
-            <li class="list-item"><a href="#">About</a></li>
-            <li class="list-item"><a href="#">♥️ Donate</a></li>
           </ul>
         </nav>
+        <a href="https://reactjs.org/">
+         <div class="logobox">
+         <img class="logoimg" src="https://png.pngtree.com/svg/20170719/react_1353128.png" alt="React"> <span>React</span></a>
+         </div>
       </div>
+<div class="sub-nav">
+  <a href="#"><img class="glass" src="https://static.thenounproject.com/png/14173-200.png">
+  <div class="sub-sub-nav">
+    <form action="#">
+      <input type="text" placeholder="Search.." name="search">
+    </form>
+    </a>
+  </div>
+</div>
     </header>
     <main class="main">
       <div class="hero-section">
         <div class="container">
+         <h1>React</h1>
           <p class="intro-desc">
-            Django makes it easier to build better Web apps more quickly and
+            A JavaScript library for building user interfaces
             with less code.
           </p>
-          <a href="#" class="cta">Get started with Django</a>
+         <div>
+          <a href="#" class="cta">Get started</a>
+          <span>Take the tutorial</span>
+         </div>
         </div>
       </div>
       <div class="container-float">
-        <div class="main-content">
-          <h2 class="main-title">Stay in the loop</h2>
-          <p class="main-desc">
-            Subscribe to one of our mailing lists to stay up to date with
-            everything in the Django community:
-          </p>
+        <div class="main-content">        
           <div class="mailing-layout">
             <div class="mailing">
               <h3 class="mailing-title">
-                <a href="#">Using Django</a>
+                <a href="#">Declarative</a>
               </h3>
               <p class="mailing-desc">
-                Get help with Django and follow announcements.
+                React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
               </p>
-              <form action="#" class="mailing-form">
-                <label for="input-following">send e-mail to follow news</label>
-                <input
-                  type="email"
-                  placeholder="Enter email"
-                  id="input-following"
-                  name="input-following"
-                />
-                <button type="submit" class="mailing-form-btn">Submit</button>
-              </form>
               <p class="mailing-desc">
                 You can also subscribe by sending an email to
                 <a href="mailto:django-users+subscribe@googlegroups.com"
@@ -79,31 +68,31 @@
             </div>
             <div class="mailing">
               <h3 class="mailing-title">
-                <a href="#">Contributing to Django</a>
+                <a href="#">Component-Based</a>
               </h3>
               <p class="mailing-desc">
-                Contribute to the development of Django itself
+                Build encapsulated components that manage their own state, then compose them to make complex UIs.
+
+Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep state out of the DOM.
               </p>
-              <form action="#" class="mailing-form">
-                <label for="input-following"
-                  >send e-mail for contribution</label
-                >
-                <input
-                  type="email"
-                  placeholder="Enter email"
-                  id="input-following"
-                  name="input-following"
-                />
-                <button type="submit" class="mailing-form-btn">Submit</button>
-              </form>
               <p class="mailing-desc">
-                Before asking a question about how to contribute, read
-                <a
-                  href="https://docs.djangoproject.com/en/dev/internals/contributing/"
-                  >Contributing to Django.</a
-                >Many frequently asked questions are answered there. You can
-                also subscribe by sending an email to
-                <a href="django-developers+subscribe@googlegroups.com"
+                You can also subscribe by sending an email to
+                <a href="mailto:django-users+subscribe@googlegroups.com"
+                  >django-users+subscribe@googlegroups.com</a
+                >
+                and following the instructions that will be sent to you.
+              </p>
+            </div>
+            <div class="mailing">
+              <h3 class="mailing-title">
+                <a href="#">Declarative</a>
+              </h3>
+              <p class="mailing-desc">
+                React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
+              </p>
+              <p class="mailing-desc">
+                You can also subscribe by sending an email to
+                <a href="mailto:django-users+subscribe@googlegroups.com"
                   >django-users+subscribe@googlegroups.com</a
                 >
                 and following the instructions that will be sent to you.
@@ -111,47 +100,7 @@
             </div>
           </div>
         </div>
-        <div class="side-content">
-          <div class="container-side-cta">
-            <a href="#" class="cta side-cta">
-              >Download<em>latest release: 2.1.7</em></a
-            >
-            <a href="#" class="more">Django documentation</a>
-          </div>
-          <div class="latest-news infos">
-            <h2 class="infos-title">Latest news</h2>
-            <article class="news-article">
-              <h3 class="news-title">
-                <a href="#"
-                  >Django bugfix releases: 2.1.7, 2.0.12 and 1.11.20
-                </a>
-              </h3>
-              <p class="news-desc">
-                Today the Django project issued bugfix releases for the 2.1, 2.0
-                and 1.11 release series.
-              </p>
-              <p class="news-meta">
-                Posted by <span>Carlton Gibson</span> on
-                <time datetime="2019-02-11">2월 11, 2019</time>
-              </p>
-            </article>
-            <a href="#" class="more">More news</a>
-          </div>
-          <div class="get-involved infos">
-            <h2 class="infos-title">Get involved</h2>
-            <dl class="list-communities">
-              <dt class="community-title">
-                <a href="#">#django IRC channel</a>
-              </dt>
-              <dd class="community-desc">Chat with other Django users</dd>
-              <dt class="community-title">
-                <a href="#">Ticket systems</a>
-              </dt>
-              <dd class="community-desc">
-                Report bugs and make feature requests
-              </dd>
-            </dl>
-            <a href="#" class="more">Inside the django community</a>
+       
           </div>
         </div>
       </div>
