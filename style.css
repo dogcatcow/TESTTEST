@@ -7,8 +7,8 @@
 
 a {
   text-decoration: none;
-  display: inline-block;
-  color: inherit;
+  display: inline-block; /* a 요소를 일렬로 나란히 배치하기 위해?*/
+  color: inherit; /* 원래는 블록 요소인걸, 인라인 변환하기 위해?*/
 }
 
 li {
@@ -21,10 +21,10 @@ li {
   padding: 0 20px;
 }
 
-/*HEADER*/
+/* HEADER */
 .header {
   min-width: 1024px;
-  background: #20232a;
+  background-color: #20232a;
   padding: 20px 0;
 }
 
@@ -58,14 +58,14 @@ li {
 .search-box {
   padding: 5px;
   width: 180px;
-  background: transparent;
+  background-color: transparent;
   font-size: 16px;
   font-weight: 300;
 }
 
 .header-link-list {
   float: right;
-  font-size: 0; /*이대로라면 inherit되어서 ?*/
+  font-size: 0;
 }
 
 .header-link-item {
@@ -73,7 +73,6 @@ li {
 }
 
 .header-link-item a {
-  /*왜 위에랑 나눠놨지?*/
   font-size: 14px;
   font-weight: 300;
   color: #fff;
@@ -81,51 +80,48 @@ li {
   margin-left: 10px;
 }
 
-/*MAIN*/
+/* HERO */
 .main-hero {
-  background: #282c34;
+  background-color: #282c34;
 }
 
-
-/*container와 hero container 어떻게 같이 끌어오는지?*/
 .hero-container {
-  padding; 100px 0;   /*콘테이너 효과에 먹힘? Cf.인스펙트*/
+  padding: 100px 0;
   text-align: center;
 }
 
 .hero-heading {
-  color: #61DAFB;
+  color: #61dafb;
   font-size: 60px;
 }
 
 .hero-body {
   color: #fff;
-  font-size: 24px;
   font-weight: 300;
-  margin: 10px 0px;
+  font-size: 24px;
+  margin: 10px 0;
 }
 
 .hero-link-list {
-  margin-top: 50px;    /*Cf. margin-left...등등*/
+  margin-top: 50px;
 }
 
-.hero-link-item {     /*적용전: li(부), a(자):모두 블록?*/
-  display: inline-block; /*인라인:나란히, 블록:위아래마진?*/
+.hero-link-item {
+  display: inline-block;
 }
 
 .hero-link-item a {
   padding: 15px 25px;
 }
 
-.hero-link-item:first-child a {
-  background: #61dafb;
+.hero-link-item:nth-child(1) a {
+  background-color: #61dafb;
 }
- /*first child 실험.*/
 
 .hero-link-item:nth-child(2) a {
   color: #61dafb;
 }
 
 .hero-link-item:nth-child(2) a::after {
-  content: " >"
+  content: " >";
 }
